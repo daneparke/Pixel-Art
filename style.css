@@ -1,0 +1,111 @@
+.maincont {
+    border: black 5px solid;
+    background-color:grey;
+
+
+}
+.headrow{
+    border: 5px green solid;
+    background-color:rgb(171, 204, 216);
+}
+.pixbox{
+    border: 5px black solid;
+    background-color:white;
+    height:400px;
+    width:800px;
+    margin-left:140px;
+    margin-right:140px;
+    display:flex;
+    justify-content:center;
+    flex-flow:row wrap;
+    align-items:flex-start;
+
+}
+.colrow{
+    border: 5px green solid;
+    background-color:rgb(171, 204, 216);
+    display:flex;
+
+}
+.pic1 {
+    width:100px;
+    height:100px;
+
+}
+.hpic {
+    display:flex;
+    justify-content:center;
+}
+.col-md-8 {
+    display:flex;
+    justify-content:center;
+}
+.header {
+    font-size:64px;
+    color:rgb(43, 16, 16);
+    text-align: center;
+}
+#circleSizes{
+    margin-left:5px;
+    margin-top:5px;
+    margin-right:5px;
+    border:solid black 1px;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+}
+.box1 {
+    background-color:blue;
+}
+.box2 {
+    background-color:red;
+}
+.box3 {
+    background-color:green;
+}
+.box4 {
+    background-color:yellow;
+}
+.box5 {
+    background-color:orange;
+}
+.box6 {
+    background-color:purple;
+}
+.box7 {
+    background-color:black;
+}
+#currCol {
+    margin-left:5px;
+    margin-top:5px;
+    margin-right:5px;
+    border:solid black 1px;
+    height:60px;
+    width:60px;
+}
+.currCol1 {
+    background-color:white;
+
+}
+
+
+.colChoices {
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+    justify-content:center;
+    
+}
+.sntrTxt {
+    display:flex;
+    justify-content:center;
+    text-align:center;
+
+}
+.box{
+    width:10px;
+    height:10px;
+    border:1px solid rgb(27, 27, 27);
+    background-color:white;
+}
+
