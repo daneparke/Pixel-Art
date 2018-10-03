@@ -1,14 +1,14 @@
-.maincont {
+.mainCont {
     border: black 5px solid;
     background-color:grey;
 
 
 }
-.headrow{
+.headRow{
     border: 5px green solid;
     background-color:rgb(171, 204, 216);
 }
-.pixbox{
+.pixBox{
     border: 5px black solid;
     background-color:white;
     height:400px;
@@ -21,7 +21,7 @@
     align-items:flex-start;
 
 }
-.colrow{
+.colRow{
     border: 5px green solid;
     background-color:rgb(171, 204, 216);
     display:flex;

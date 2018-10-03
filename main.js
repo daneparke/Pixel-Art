@@ -1,122 +1,69 @@
-document.addEventListener('DOMContentLoaded', function() {
-    for (var i = 0; i < 3080; i++){
-        var boxes = document.createElement('main');
-        var container = document.querySelector('.pixbox');
-        container.appendChild(boxes);
-        boxes.setAttribute('class', 'box');
-
-
-
+document.addEventListener("DOMContentLoaded", function () {
+    for (var i = 0; i < 3080; i++) {
+        var boxes = document.createElement("main")
+        var container = document.querySelector(".pixBox")
+        container.appendChild(boxes)
+        boxes.setAttribute("class", "box")
     }
-
-    var button = document.getElementById("newbttn")
+    var button = document.getElementById("newBttn")
 
     button.addEventListener("click", Button)
-    function Button(){
-    alert("You Don't Get More Colorz!");
+    function Button() {
+        alert("You Don't Get More Colorz!")
     }
-    var box1 = document.querySelector('.box1');
-    var box2 = document.querySelector('.box2');
-    var box3 = document.querySelector('.box3');
-    var box4 = document.querySelector('.box4');
-    var box5 = document.querySelector('.box5');
-    var box6 = document.querySelector('.box6');
-    var box7 = document.querySelector('.box7');
-    var currCol1 = document.querySelector('.currCol1');
-    var allFill = document.querySelector('.allFill');
-    var box = document.querySelectorAll('.box');
-
-    
-
-
-
+    var box1 = document.querySelector(".box1")
+    var box2 = document.querySelector(".box2")
+    var box3 = document.querySelector(".box3")
+    var box4 = document.querySelector(".box4")
+    var box5 = document.querySelector(".box5")
+    var box6 = document.querySelector(".box6")
+    var box7 = document.querySelector(".box7")
+    var currCol1 = document.querySelector(".currCol1")
+    var allFill = document.querySelector(".allFill")
+    var box = document.querySelectorAll(".box")
 
     box1.addEventListener("click", blue)
-    function blue(){
-        document.querySelector(".currCol1").style.backgroundColor = "blue";  
+    function blue() {
+        document.querySelector(".currCol1").style.backgroundColor = "blue"
     }
     box2.addEventListener("click", red)
-    function red(){
-        document.querySelector(".currCol1").style.backgroundColor = "red";  
+    function red() {
+        document.querySelector(".currCol1").style.backgroundColor = "red"
     }
     box3.addEventListener("click", green)
-    function green(){
-        document.querySelector(".currCol1").style.backgroundColor = "green";  
-    }  
+    function green() {
+        document.querySelector(".currCol1").style.backgroundColor = "green"
+    }
     box4.addEventListener("click", yellow)
-    function yellow(){
-        document.querySelector(".currCol1").style.backgroundColor = "yellow";  
-    }  
+    function yellow() {
+        document.querySelector(".currCol1").style.backgroundColor = "yellow"
+    }
     box5.addEventListener("click", orange)
-    function orange(){
-        document.querySelector(".currCol1").style.backgroundColor = "orange";  
+    function orange() {
+        document.querySelector(".currCol1").style.backgroundColor = "orange"
     }
     box6.addEventListener("click", purple)
-    function purple(){
-        document.querySelector(".currCol1").style.backgroundColor = "purple";  
+    function purple() {
+        document.querySelector(".currCol1").style.backgroundColor = "purple"
     }
     box7.addEventListener("click", black)
-    function black(){
-        document.querySelector(".currCol1").style.backgroundColor = "black";  
+    function black() {
+        document.querySelector(".currCol1").style.backgroundColor = "black"
     }
-
 
     allFill.addEventListener("click", fillAll)
-    function fillAll(){
-        for (var i = 0; i < container.children.length; i++){
+    function fillAll() {
+        for (var i = 0; i < container.children.length; i++) {
             var brush = document.querySelector(".currCol1").style.backgroundColor
-            container.children[i].style.backgroundColor = brush;
+            container.children[i].style.backgroundColor = brush
         }
     }
-    // container.addEventListener("click", fillBox)
-    // function fillBox(){
-    //     for (var i = 0; i < container.children.length; i++){
-    //     var brush = document.querySelector(".currCol1").style.backgroundColor
-    //     event.target.style.backgroundColor = brush;
-    //     }
-    // }
-    // container.addEventListener("mouseup", fillBox)
-    // function fillBox(){
-    //     for (var i = 0; i < container.children.length; i++){
-    //     var brush = document.querySelector(".currCol1").style.backgroundColor
-    //     event.target.style.backgroundColor = brush;
-    //     }
-    // }
     container.addEventListener("click", fillBox)
-    function fillBox(){
-        // if (mousedown === false){
-        //     container.removeEventListener(fillBox)
-        // }else {
-        // container.addEventListener("mouseover", fillBox)
-        // function fillBox(){
-            for (var i = 0; i < container.children.length; i++){
-            var brush = document.querySelector(".currCol1").style.backgroundColor
-            event.target.style.backgroundColor = brush;
-            }
-        
-        // for (var i = 0; i < container.children.length; i++){
-        // var brush = document.querySelector(".currCol1").style.backgroundColor
-        // event.target.style.backgroundColor = brush;
-        // }
+    function fillBox() {
+        for (var i = 0; i < container.children.length; i++) {
+            event.target.style.backgroundColor = document.querySelector(".currCol1").style.backgroundColor
+        }
     }
-        
-    
-    // container.addEventListener("mouseup", fillBox)
-    // function fillBox(){
-    //     for (var i = 0; i < container.children.length; i++){
-    //         event.target.removeEventListener();
-     
-    //     }
-        
-    // }
-
-
-
-
-
-
-
-
 });
 
 // if a button is pressed change the color of the current color. 
